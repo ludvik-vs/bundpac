@@ -1,0 +1,20 @@
+{
+  "name": "bundpack",
+  "version": "0.0.1",
+  "description": "It is a tool that allows you to list all the projects in a specific directory, select the different projects to join the dependencies and create a new npm project with the assembly of all the dependencies of the selected projects.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "tool",
+    "assemble",
+    "packages"
+  ],
+  "author": "joseluis18vs",
+  "license": "ISC",
+  "dependencies": {
+    "blessed": "^0.1.81",
+    "chalk": "2.4.2"
+  }
+}
