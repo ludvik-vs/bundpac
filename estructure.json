@@ -1,0 +1,15 @@
+{
+    "bundpack": {
+        "name": "bundpack",
+        "dependencies": {
+            "blessed": "^0.1.81",
+            "chalk": "2.4.2"
+        }
+    },
+    "tasaCof": {
+        "dependencies": {
+            "blessed": "^0.1.81",
+            "chalk": "2.4.2"
+        }
+    }
+}
