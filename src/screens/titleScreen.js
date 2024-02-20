@@ -6,24 +6,17 @@ function showTitle(screen) {
     // Crea un cuadro para mostrar el título
     const titleBox = blessed.box({
         top: 0,
-        left: 'center',
+        left: '50%',
         width: '50%',
-        height: '20%',
-        content: `
-    ${chalk.blue.bold(`    //   ) )`)}                              //  //   ) )               
-    ${chalk.blue.bold(`   //___/ / `)}                __       ___ //  //___/ /   ___       ___
-    ${chalk.blue.bold(`  / __  (   `)}  //   / /  //   ) )  //   ) /  / ____ /  //   ) )  //   
-    ${chalk.blue.bold(` //    ) )  `)} //   / /  //   / /  //   / /  //        //   / /  //    
-    ${chalk.blue.bold(`//____/ /   `)}((___( (  //   / /  ((___/ /  //        ((___( (  ((____ 
-
-
-        `,
+        height: '10%',
+        content: `${chalk.blue.bold(`B`)}${chalk.cyan.bold(`u`)}${chalk.green.bold(`n`)}${chalk.yellow.bold(`d`)}${chalk.red.bold(`pac`)}`,
         border: {
             type: 'none'
         },
         style: {
             fg: 'white',
             bg: 'black',
+            font: { size: '128' }
         }
     });
 

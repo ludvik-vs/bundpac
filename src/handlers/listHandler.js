@@ -1,34 +1,49 @@
 const chalk = require('chalk');
-const { crearNuevoProyecto } = require('../utils/crearNuevoProyecto');
-const { copiarDependencias } = require('../utils/copiarDependencias');
 const { showAlert } = require('../screens/alertScreen');
+const { createLabelScreen } = require('../screens/labelScreen');
+const { createInputScreen } = require('../screens/inputScreen');
 
-function handleList(list, proyectos, screen, inputBox, labelBox) {
+function handleList(list, projectsManager, screen) {
 
     list.key('space', () => {
-        const selectedItemIndex = list.selected;
-        proyectos[selectedItemIndex].selected = !proyectos[selectedItemIndex].selected;
-        list.setItem(selectedItemIndex, `${chalk.magenta.bgBlack('Project name: ')}${proyectos[selectedItemIndex].name} ==> # dependencies: (${proyectos[selectedItemIndex].dependencies}) ${proyectos[selectedItemIndex].selected ? chalk.blue.bgGreen('Selected to join') : chalk.yellow.bgRed('No selected')}`);
-        screen.render();
+        const selectedIndex = list.selected;
+        const callAllProjects = projectsManager.getAllProjects()
+        const projectsValues = Object.values(callAllProjects);
+        const projectName = projectsValues[selectedIndex].name
+        
+        try{
+            projectsManager.toggleSelected(projectName)
+
+        }catch(e){
+            showAlert(screen, e)    
+
+        }finally{
+            const updatedValues = projectsManager.getProject(projectName)
+            const projectDependencies = Object.keys(updatedValues.dependencies).length
+            const isSelectedStatus = updatedValues.isSelected
+            list.setItem(selectedIndex, `${chalk.magenta.bgBlack('Project name: ')}${projectName} ==> # dependencies: (${projectDependencies}) ${isSelectedStatus ? chalk.blue.bgGreen('Selected to join') : chalk.yellow.bgRed('No selected')}`);
+            screen.render();
+        }
+
     });
 
     list.key('enter', () => {
-        // Contar el número de proyectos seleccionados
-        const selectedProjectsCount = proyectos.filter(proyecto => proyecto.selected).length;
+        const callAllProjects = projectsManager.getAllProjects()
+        const selectedProjectsCount = Object.values(callAllProjects).filter(project => project.isSelected).length;
 
-        // Verificar si hay al menos dos proyectos seleccionados
-        if (selectedProjectsCount >= 2) {
-            inputBox.focus();
-            inputBox.setFront();
-            list.select()
-        } else {
-            showAlert(screen, 'Debe seleccionar al menos dos proyectos.');
-            list.focus();
-            list.setFront();
+        if (selectedProjectsCount >= 2){
+            createLabelScreen(screen)
+            const input = createInputScreen(screen, projectsManager)
+            input.focus()
+
+        } else{
+            list.focus()
+            showAlert(screen, "Select two o more projects")
         }
+
         screen.render();
     });
+
 }
 
 module.exports = { handleList };
-

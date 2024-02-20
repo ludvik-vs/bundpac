@@ -1,10 +1,5 @@
-class Project {
-    constructor(name, dependencies) {
-        this.name = name;
-        this.dependencies = dependencies;
-        this.isSelected = false;
-    }
-}
+const { showAlert } = require('../screens/alertScreen');
+const Project = require('./Project');
 
 class ProjectManager {
     constructor() {
@@ -57,29 +52,11 @@ class ProjectManager {
             project.isSelected = !project.isSelected;
         }
     }
+
+    getSelectedProjects() {
+        return Object.values(this.projects).filter(project => project.isSelected);
+    }
 }
 
-`
-    const projectManager = new ProjectManager();
-    Object.freeze(projectManager);
-    // Ejemplo de uso
-    const project1 = new Project("project1", {
-        "dependency1": "^1.0.0",
-        "dependency2": "^2.0.0"
-    });
+module.exports = ProjectManager;
 
-    const project2 = new Project("project2", {
-        "dependency2": "^2.0.0",
-        "dependency3": "^3.0.0"
-    });
-
-    projectManager.addProject(project1);
-    projectManager.addProject(project2);
-
-    console.log(projectManager.getAllProjects());
-
-    const combinedProject = projectManager.combine([project1, project2], "combinedProject");
-
-    console.log(combinedProject);
-    console.log(projectManager.getAllProjects());
-`

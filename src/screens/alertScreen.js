@@ -1,5 +1,4 @@
 const blessed = require('blessed');
-const chalk = require('chalk');
 
 // Función para mostrar una alerta en la pantalla
 function showAlert(screen, message) {
@@ -8,17 +7,14 @@ function showAlert(screen, message) {
         top: '85%', // Ajusta la posición para que aparezca por debajo del createInputScreen
         left: 'center',
         width: '50%',
-        height: 3,
+        height: '10%',
         content: message, // Utiliza el mensaje proporcionado como contenido
         border: {
             type: 'line'
         },
         style: {
-            fg: 'white',
-            bg: 'black',
-            font:{
-                size: 1
-            }
+            fg: 'black',
+            bg: 'yellow',
         }
     });
 
