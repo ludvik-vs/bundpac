@@ -5,4 +5,5 @@ class Project {
         this.isSelected = false;
     }
 }
+
 module.exports = Project;

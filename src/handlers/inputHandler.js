@@ -7,8 +7,7 @@ function handleInput(nombreNuevoProyecto, projectManager, screen) {
     const combineProjects = projectManager.combine(selectedProjects, nombreNuevoProyecto)
     createProject(combineProjects)
 
-    // Muestra un mensaje indicando que se puede presionar cualquier tecla para salir
-    showAlert(screen, `Presione 'shift + q' | 'Ctrl + z' | 'escape' para salir.`);
+    showAlert(screen, `keys | 'shift + q' | 'Ctrl + z' | 'esc' | to exit.`);
 
 }
 

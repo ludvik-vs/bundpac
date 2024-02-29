@@ -1,4 +1,3 @@
-const { showAlert } = require('../screens/alertScreen');
 const Project = require('./Project');
 
 class ProjectManager {

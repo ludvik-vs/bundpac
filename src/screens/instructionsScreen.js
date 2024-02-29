@@ -1,20 +1,18 @@
 const blessed = require('blessed');
 const chalk = require('chalk');
 
-// Función para configurar y mostrar las instrucciones en la pantalla
 function showInstructions(screen) {
-    // Crea una caja para mostrar las instrucciones
     const instructionsBox = blessed.box({
         top: '20%',
         left: 'center',
         width: '100%',
         height: '20%',
         content: `
-        1. Para salir presiona la tecla ${chalk.red('q')} o ${chalk.red('esc')}.
-        2. Para moverse entre el listado de proyectos use las ${chalk.green('↑↓')} felchas direccionales del teclado.
-        3. Para seleccionar o deseleccionar un proyecto, presione la barra espaciadora ${chalk.blue('┌─┐')}.
-        4. Para procesar y crear un nuevo proyecto unificado presione enter ${chalk.green('┘')}
-        5.
+        1. keys | ${chalk.red('q')} our ${chalk.red('esc')} | to exit.
+        2. Use the ${chalk.green('↑↓')} directional arrows to move through the project list.
+        3. Key ${chalk.blue('┌─┐')} to to change the project selection status.
+        4. Key Enter ${chalk.green('┘')} to process the selected projects.
+        ${chalk.red.bgYellow('Note')}: The new project will be created in the same directory where the selected projects are located.
         `,
         border: {
             type: 'line'
@@ -25,11 +23,7 @@ function showInstructions(screen) {
         }
     });
 
-    // Añade la caja de instrucciones a la pantalla
     screen.append(instructionsBox);
-
-    // Renderiza la pantalla
-    //screen.render();
 }
 
 module.exports = { showInstructions };
