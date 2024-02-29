@@ -1,10 +1,10 @@
 {
   "name": "bundpac",
   "version": "1.0.4",
-  "description": "It is a tool that allows you to list all the projects in a specific directory, select the different projects to join the dependencies and create a new npm project with the assembly of all the dependencies of the selected projects.",
+  "description": "Bundpac is a tool that quickly and easily automates the consolidation of dependencies from different projects into a single new project.",
   "main": "index.js",
   "bin": {
-    "bundpac": "node index.js"
+    "bundpac": "index.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

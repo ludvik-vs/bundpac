@@ -1,4 +1,4 @@
-name: Publicar paquete npm
+name: update_bundpac_npm_package
 
 on:
   push:
@@ -11,6 +11,14 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
+
+      - name: Build del paquete
+        run: npm run build
       
-      - name: Publicar el paquete
+      - name: Auth npm
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" >> ~/.npmrc
+      
+      - name: update_bundpac_npm_package
         run: npm publish
