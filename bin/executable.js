@@ -1,1 +1,2 @@
-require('../index.js');
+const { bundpac } = require('../index.js');
+bundpac();
