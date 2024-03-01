@@ -51,16 +51,16 @@ npm install -g bundpac
 # Example
 
 ### Menu
-![Menu](./img/bp_menu.png)
+![Menu](https://raw.githubusercontent.com/joseluis18vs/bundpac/main/img/bp_menu.png)
 
 ### Select Projects
-![Select](./img/bp_select.png)
+![Select](https://raw.githubusercontent.com/joseluis18vs/bundpac/main/img/bp_select.png)
 
 ### New project name
-![Select](./img/bp_type.png)
+![Select](https://raw.githubusercontent.com/joseluis18vs/bundpac/main/img/bp_type.png)
 
 ### New project created
-![Select](./img/bp_created.png)
+![Select](https://raw.githubusercontent.com/joseluis18vs/bundpac/main/img/bp_created.png)
 
 # Contributing
 Contributions are welcome! Please feel free to submit issues, feature requests, or pull requests.
@@ -112,16 +112,16 @@ npm install -g bundpac
 # Ejemplo
 
 ### MENU
-![Menu](./img/bp_menu.png)
+![Menu](https://raw.githubusercontent.com/joseluis18vs/bundpac/main/img/bp_menu.png)
 
 ### Selección
-![Select](./img/bp_select.png)
+![Select](https://raw.githubusercontent.com/joseluis18vs/bundpac/main/img/bp_select.png)
 
 ### Nuevo Proyecto
-![Select](./img/bp_type.png)
+![Select](https://raw.githubusercontent.com/joseluis18vs/bundpac/main/img/bp_type.png)
 
 ### Proyecto Creado
-![Select](./img/bp_created.png)
+![Select](https://raw.githubusercontent.com/joseluis18vs/bundpac/main/img/bp_created.png)
 
 # Contribuir
 Las contribuciones son bienvenidas. No dude en enviar problemas, solicitudes de funciones o pull requests.
