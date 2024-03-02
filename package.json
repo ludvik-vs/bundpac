@@ -1,14 +1,11 @@
 {
   "name": "bundpac",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "Bundpac is a tool that quickly and easily automates the consolidation of dependencies from different projects into a single new project.",
   "main": "index.js",
-  "bin": {
-    "bundpac": "bin/run/index.js"
-  },
   "scripts": {
-    "bundpac-start": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js",
+    "test": "echo \"Bundpac Test\" && exit 1"
   },
   "keywords": [
     "cli",
