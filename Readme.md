@@ -34,7 +34,7 @@ npm install -g bundpac
 
 3. Go to the directory where the subdirectories of the projects you want to consolidate are located. (The script checks all subdirectories for the "package.json" file of each project and extracts the name of the project and its dependencies). 
 
-4. Type the command `npm bundpac` and press "Enter", the menu will pop up.
+4. Type the command `bundpac` and press "Enter", the menu will pop up.
 
 5. Select two or more projects you wish to consolidate. (To change the selection status of the projects, hover over the project in the list and press the space key to change the selection status.)
 
@@ -95,7 +95,7 @@ npm install -g bundpac
 
 3. Dirígete al directorio donde se encuentran los subdirectorios de los proyectos que quieres consolidar. (El script revisa todos los subdirectorios en búsqueda del archivo "package.json" de cada proyecto y extrae el nombre del proyecto y sus dependencias) 
 
-4. Escribe el comando `npm bundpac` y presiona "Enter", se desplegara el menu.
+4. Escribe el comando `bundpac` y presiona "Enter", se desplegara el menu.
 
 5. Selecciona dos o mas proyectos que desees consolidar. (Para cambiar el estatus de selección de los proyectos, debes colocarte sobre el proyecto en el listado y presionar la tecla de espacio para cambiar el estatus de selección)
 
