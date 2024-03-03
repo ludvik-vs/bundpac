@@ -1,11 +1,18 @@
 # BUNDPAC
-![npm](https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=white) 
 
+| En | Es |
+|----|----|
+| Is a tool that quickly and easily automates the consolidation of dependencies from different projects into a single new project. | Es una herramienta que automatiza de forma rápida y sencilla la consolidación de dependencias de diferentes proyectos en un único nuevo proyecto. |
+
+
+[![made-with-javascript](https://img.shields.io/badge/%20package-npm-cb3837.svg)](https://www.npmjs.com/)
+[![Npm package version](https://badgen.net/npm/v/bundpac)](https://npmjs.com/package/bundpac)
+[![made-with-javascript](https://img.shields.io/badge/Made%20with-JavaScript-f0db4f.svg)](https://www.javascript.com)
+[![Npm package daily downloads](https://badgen.net/npm/dm/bundpac)](https://npmjs.com/package/bundpac)
 
 <a href="https://www.npmjs.com/package/bundpac" title="Go to Bundpac npm">npm Bundpac</a>
 
-
-[En](#overview) | [Es](#es)
+[En](#en) | [Es](#es)
 
 # (EN)
 ## Overview
@@ -20,7 +27,7 @@ Bundpac is a tool that quickly and easily automates the consolidation of depende
 
 ## Installation
 
-You can install BUNDPAC globally using npm:
+You can install bundpac globally using npm:
 
 ``
 npm install -g bundpac
@@ -28,13 +35,17 @@ npm install -g bundpac
 
 # Usage
 
-1. Install "BUNDPAC" globally.
+1. Install "bundpac" globally.
+
+    ``
+    npm install -g bundpac
+    ``
 
 2. Open a console (CMD).
 
 3. Go to the directory where the subdirectories of the projects you want to consolidate are located. (The script checks all subdirectories for the "package.json" file of each project and extracts the name of the project and its dependencies). 
 
-4. Type the command `bundpac` and press "Enter", the menu will pop up.
+4. Type the command ``bundpac`` and press "Enter", the menu will pop up.
 
 5. Select two or more projects you wish to consolidate. (To change the selection status of the projects, hover over the project in the list and press the space key to change the selection status.)
 
@@ -44,7 +55,7 @@ npm install -g bundpac
 
 8. Once the name is entered, press the "Enter" key to create the project and the project directory with its package.json will be automatically created.
 
-9. In a console (CMD) enter the directory of the created project and execute `npm install` to install all the dependencies.
+9. In a console (CMD) enter the directory of the created project and execute ```npm install``` to install all the dependencies.
 
 10. To exit you can press 'esc' or the combination of "ctrl + z" or "shift + q".
 
@@ -65,6 +76,8 @@ npm install -g bundpac
 # Contributing
 Contributions are welcome! Please feel free to submit issues, feature requests, or pull requests.
 
+[Github Repo](https://github.com/joseluis18vs/bundpac)
+
 # License
 This project is licensed under the MIT License.
 
@@ -82,20 +95,24 @@ Bundpac es una herramienta que automatiza de forma rápida y sencilla la consoli
 
 ## Instalación
 
-Instala BUNDPAC de forma global con npm:
+Instala bundpac de forma global con npm:
 
 ``
 npm install -g bundpac
 ``
 
 # Uso
-1. Instala "BUNDPAC" de forma global.
+1. Instala "bundpac" de forma global.
+
+    ``
+    npm install -g bundpac
+    ``
 
 2. Abre una consola (CMD).
 
 3. Dirígete al directorio donde se encuentran los subdirectorios de los proyectos que quieres consolidar. (El script revisa todos los subdirectorios en búsqueda del archivo "package.json" de cada proyecto y extrae el nombre del proyecto y sus dependencias) 
 
-4. Escribe el comando `bundpac` y presiona "Enter", se desplegara el menu.
+4. Escribe el comando ```bundpac``` y presiona "Enter", se desplegara el menu.
 
 5. Selecciona dos o mas proyectos que desees consolidar. (Para cambiar el estatus de selección de los proyectos, debes colocarte sobre el proyecto en el listado y presionar la tecla de espacio para cambiar el estatus de selección)
 
@@ -125,6 +142,7 @@ npm install -g bundpac
 
 # Contribuir
 Las contribuciones son bienvenidas. No dude en enviar problemas, solicitudes de funciones o pull requests.
+[Repositorio Github](https://github.com/joseluis18vs/bundpac)
 
 # Licencia
 Este proyecto está licenciado bajo la Licencia MIT.
