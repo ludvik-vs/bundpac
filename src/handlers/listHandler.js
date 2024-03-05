@@ -21,7 +21,7 @@ function handleList(list, projectsManager, screen) {
             const updatedValues = projectsManager.getProject(projectName)
             const projectDependencies = Object.keys(updatedValues.dependencies).length
             const isSelectedStatus = updatedValues.isSelected
-            list.setItem(selectedIndex, `${chalk.magenta.bgBlack('Project name: ')}${projectName} ==> # dependencies: (${projectDependencies}) ${isSelectedStatus ? chalk.blue.bgGreen('Selected to join') : chalk.yellow.bgRed('No selected')}`);
+            list.setItem(selectedIndex, `${chalk.magenta.bgBlack('Project name: ')}${projectName} ==> # dependencies: (${projectDependencies}) ${isSelectedStatus ? chalk.blue.bgGreen('Selected') : chalk.yellow.bgRed('No selected')}`);
             screen.render();
         }
 
@@ -33,7 +33,7 @@ function handleList(list, projectsManager, screen) {
 
         if (selectedProjectsCount >= 2){
             createLabelScreen(screen)
-            const input = createInputScreen(screen, projectsManager)
+            const input = createInputScreen(screen, projectsManager, list)
             input.focus()
 
         } else{

@@ -1,7 +1,7 @@
 const blessed = require('blessed');
 const { handleInput } = require('../handlers/inputHandler');
 
-function createInputScreen(screen, projectsManager) {
+function createInputScreen(screen, projectsManager, list) {
 
     const inputBox = blessed.textbox({
         top: '70%',
@@ -36,7 +36,7 @@ function createInputScreen(screen, projectsManager) {
         let currentValue = inputBox.getContent();
 
         if (key.full === 'enter') {
-            handleInput(currentValue, projectsManager, screen)
+            handleInput(currentValue, projectsManager, screen, list)
         } else if (key.full === 'backspace' || key.full === 'delete') {
             currentValue = currentValue.slice(0, -1);
             inputBox.setContent(currentValue);

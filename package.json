@@ -1,13 +1,13 @@
 {
   "name": "bundpac",
-  "version": "1.0.14",
+  "version": "1.0.15",
   "description": "Bundpac is a tool that quickly and easily automates the consolidation of dependencies from different projects into a single new project.",
   "main": "index.js",
   "bin": {
     "bundpac": "index.js"
   },
   "scripts": {
-    "start": "node index.js", 
+    "start": "node index.js",
     "test": "echo \"Bundpac Test\" && exit 1"
   },
   "keywords": [
@@ -23,7 +23,7 @@
     "dependencies"
   ],
   "author": "joseluis18vs",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "blessed": "0.1.81",
     "chalk": "2.4.2"

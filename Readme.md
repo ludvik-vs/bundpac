@@ -1,18 +1,15 @@
-# BUNDPAC
+# bundpac
 
-| En | Es |
+[![made-with-javascript](https://img.shields.io/badge/%20package-npm-cb3837.svg)](https://www.npmjs.com/bundpac)
+[![made-with-javascript](https://img.shields.io/badge/Made%20with-JavaScript-f0db4f.svg)](https://www.javascript.com)
+[![Npm package version](https://badgen.net/npm/v/bundpac)](https://www.npmjs.com/bundpac)
+[![Npm package daily downloads](https://badgen.net/npm/dm/bundpac)](https://www.npmjs.com/bundpac)
+
+
+| [English documentation ](#en) | [Documentación en español](#es) |
 |----|----|
 | Is a tool that quickly and easily automates the consolidation of dependencies from different projects into a single new project. | Es una herramienta que automatiza de forma rápida y sencilla la consolidación de dependencias de diferentes proyectos en un único nuevo proyecto. |
 
-
-[![made-with-javascript](https://img.shields.io/badge/%20package-npm-cb3837.svg)](https://www.npmjs.com/)
-[![Npm package version](https://badgen.net/npm/v/bundpac)](https://npmjs.com/package/bundpac)
-[![made-with-javascript](https://img.shields.io/badge/Made%20with-JavaScript-f0db4f.svg)](https://www.javascript.com)
-[![Npm package daily downloads](https://badgen.net/npm/dm/bundpac)](https://npmjs.com/package/bundpac)
-
-<a href="https://www.npmjs.com/package/bundpac" title="Go to Bundpac npm">npm Bundpac</a>
-
-[En](#en) | [Es](#es)
 
 # (EN)
 ## Overview
@@ -27,7 +24,7 @@ Bundpac is a tool that quickly and easily automates the consolidation of depende
 
 ## Installation
 
-You can install bundpac globally using npm:
+Install bundpac globally using npm:
 
 ``
 npm install -g bundpac
@@ -145,4 +142,4 @@ Las contribuciones son bienvenidas. No dude en enviar problemas, solicitudes de 
 [Repositorio Github](https://github.com/joseluis18vs/bundpac)
 
 # Licencia
-Este proyecto está licenciado bajo la Licencia MIT.
+Este proyecto está bajo la Licencia MIT.

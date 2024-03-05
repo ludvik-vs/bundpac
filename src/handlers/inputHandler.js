@@ -1,13 +1,22 @@
 const { createProject } = require('../utils/createProject');
 const { showAlert } = require('../screens/alertScreen');
 
-function handleInput(nombreNuevoProyecto, projectManager, screen) {
+function handleInput(newProject, projectManager, screen, list) {
 
-    const selectedProjects = projectManager.getSelectedProjects()
-    const combineProjects = projectManager.combine(selectedProjects, nombreNuevoProyecto)
-    createProject(combineProjects)
+    const validatedProjectName = newProject.trim();
 
-    showAlert(screen, `keys | 'shift + q' | 'Ctrl + z' | 'esc' | to exit.`);
+    if (validatedProjectName <= 0){
+        showAlert(screen, `Please type a name for the new project`);
+        list.focus()
+        
+    } else{
+        const selectedProjects = projectManager.getSelectedProjects()
+        const combineProjects = projectManager.combine(selectedProjects, newProject)
+        createProject(combineProjects)
+    
+        showAlert(screen, `keys | 'shift + q' | 'Ctrl + z' | 'esc' | to exit.`);
+    }
+
 
 }
 
