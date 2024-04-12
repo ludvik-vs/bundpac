@@ -1,8 +1,9 @@
-# bundpac
+    # bundpac
 
 [![made-with-javascript](https://img.shields.io/badge/%20package-npm-cb3837.svg)](https://www.npmjs.com/bundpac)
 [![made-with-javascript](https://img.shields.io/badge/Made%20with-JavaScript-f0db4f.svg)](https://www.javascript.com)
 [![Npm package version](https://badgen.net/npm/v/bundpac)](https://www.npmjs.com/bundpac)
+[![Npm package daily downloads](https://badgen.net/npm/dd/bundpac)](https://www.npmjs.com/bundpac)
 [![Npm package daily downloads](https://badgen.net/npm/dm/bundpac)](https://www.npmjs.com/bundpac)
 
 
@@ -14,66 +15,66 @@
 # (EN)
 ## Overview
 
-Bundpac is a tool that quickly and easily automates the consolidation of dependencies from different projects into a single new project:
+    Bundpac is a tool that quickly and easily automates the consolidation of dependencies from different projects into a single new project:
 
-1. **List All Projects**: Easily view all projects (npm) within a specified directory.
+    1. **List All Projects**: Easily view all projects (npm) within a specified directory.
 
-2. **Dynamic Project Selection**: Facilitates the dynamic selection of different projects from the listed ones.
+    2. **Dynamic Project Selection**: Facilitates the dynamic selection of different projects from the listed ones.
 
-3. **Dependency Consolidation**: Automatically creates a new directory with a provided name and generates a package.json file inside. This package.json file consolidates all the dependencies from the selected projects.
+    3. **Dependency Consolidation**: Automatically creates a new directory with a provided name and generates a package.json file inside. This package.json file consolidates all the dependencies from the selected projects.
 
-## Installation
+    ## Installation
 
-Install bundpac globally using npm:
-
-``
-npm install -g bundpac
-``
-
-# Usage
-
-1. Install "bundpac" globally.
+    Install bundpac globally using npm:
 
     ``
     npm install -g bundpac
     ``
 
-2. Open a console (CMD).
+    # Usage
 
-3. Go to the directory where the subdirectories of the projects you want to consolidate are located. (The script checks all subdirectories for the "package.json" file of each project and extracts the name of the project and its dependencies). 
+    1. Install "bundpac" globally.
 
-4. Type the command ``bundpac`` and press "Enter", the menu will pop up.
+        ``
+        npm install -g bundpac
+        ``
 
-5. Select two or more projects you wish to consolidate. (To change the selection status of the projects, hover over the project in the list and press the space key to change the selection status.)
+    2. Open a console (CMD).
 
-6. Once the desired projects have been selected, press the "Enter" key.
+    3. Go to the directory where the subdirectories of the projects you want to consolidate are located. (The script checks all subdirectories for the "package.json" file of each project and extracts the name of the project and its dependencies). 
 
-7. A text box will be displayed where you will enter the name of the consolidated project.
+    4. Type the command ``bundpac`` and press "Enter", the menu will pop up.
 
-8. Once the name is entered, press the "Enter" key to create the project and the project directory with its package.json will be automatically created.
+    5. Select two or more projects you wish to consolidate. (To change the selection status of the projects, hover over the project in the list and press the space key to change the selection status.)
 
-9. In a console (CMD) enter the directory of the created project and execute ```npm install``` to install all the dependencies.
+    6. Once the desired projects have been selected, press the "Enter" key.
 
-10. To exit you can press 'esc' or the combination of "ctrl + z" or "shift + q".
+    7. A text box will be displayed where you will enter the name of the consolidated project.
 
-# Example
+    8. Once the name is entered, press the "Enter" key to create the project and the project directory with its package.json will be automatically created.
 
-### Menu
-![Menu](https://raw.githubusercontent.com/joseluis18vs/bundpac/main/img/bp_menu.png)
+    9. In a console (CMD) enter the directory of the created project and execute ```npm install``` to install all the dependencies.
 
-### Select Projects
-![Select](https://raw.githubusercontent.com/joseluis18vs/bundpac/main/img/bp_select.png)
+    10. To exit you can press 'esc' or the combination of "ctrl + z" or "shift + q".
 
-### New project name
-![Select](https://raw.githubusercontent.com/joseluis18vs/bundpac/main/img/bp_type.png)
+    # Example
 
-### New project created
-![Select](https://raw.githubusercontent.com/joseluis18vs/bundpac/main/img/bp_created.png)
+    ### Menu
+    ![Menu](https://raw.githubusercontent.com/joseluis18vs/bundpac/main/img/bp_menu.png)
 
-# Contributing
-Contributions are welcome! Please feel free to submit issues, feature requests, or pull requests.
+    ### Select Projects
+    ![Select](https://raw.githubusercontent.com/joseluis18vs/bundpac/main/img/bp_select.png)
 
-[Github Repo](https://github.com/joseluis18vs/bundpac)
+    ### New project name
+    ![Select](https://raw.githubusercontent.com/joseluis18vs/bundpac/main/img/bp_type.png)
+
+    ### New project created
+    ![Select](https://raw.githubusercontent.com/joseluis18vs/bundpac/main/img/bp_created.png)
+
+    # Contributing
+    Contributions are welcome! Please feel free to submit issues, feature requests, or pull requests.
+
+    [Github Repo](https://github.com/joseluis18vs/bundpac)
 
 # License
 This project is licensed under the MIT License.

@@ -1,6 +1,6 @@
 {
   "name": "bundpac",
-  "version": "1.0.15",
+  "version": "1.0.16",
   "description": "Bundpac is a tool that quickly and easily automates the consolidation of dependencies from different projects into a single new project.",
   "main": "index.js",
   "bin": {
