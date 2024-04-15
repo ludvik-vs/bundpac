@@ -142,12 +142,8 @@ Las contribuciones son bienvenidas. No dude en enviar problemas, solicitudes de 
 # Licencia
 Este proyecto está bajo la Licencia MIT.
 
-<!-- ![Buy Me a Coffee Image](img/BuyMeACoffee.svg "Buy Me a Coffee") -->
-<!-- [Buy Me a Coffee](https://www.buymeacoffee.com/_jlvs_) -->
-<!-- <img src="img/BuyMeACoffee.svg"  >  -->
-
 <div style="background: white; display:flex; align-items:center; justify-content: center;">
-    <img src="img/BuyMeACoffee.svg" alt="Buy Me a Coffee" width="80"/>
+    <img src="https://raw.githubusercontent.com/ludvik-vs/bundpac/e0245d185b3b456f05566b60e45dcc3481274249/img/BuyMeACoffee.svg" alt="Buy Me a Coffee" width="80"/>
     <a 
         href="https://www.buymeacoffee.com/_jlvs_"
         style="font-size: 30px; font-weight: 900;"
